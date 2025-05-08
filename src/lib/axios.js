@@ -8,7 +8,7 @@
 import axios from "axios";
 const backendURL = import.meta.env.MODE === "development"
   ? "http://localhost:3000/api"
-  : "/api";
+  : "https://chatapp-backend-vrz8.onrender.com/api";
 
 export const axiosInstance = axios.create({
   baseURL: backendURL,
